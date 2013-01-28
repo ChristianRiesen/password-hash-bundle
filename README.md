@@ -64,4 +64,4 @@ Note: The cost has to be an integer between 4 and 31.
 Storage
 -------
 
-However you store the passwords (no need for salt storage, it's all in one) you will need 60 bytes for it. Make certain you can store it properly, as it has may contain characters that might cause troubles with hand made queries.
+However you store the passwords (no need for salt storage, it's all in one) you will need always 60 bytes for it. The hash will never be shorter but always exactly this length. Make certain you can store it properly, as it has may contain characters that might cause troubles with hand made queries.
