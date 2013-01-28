@@ -1,0 +1,7 @@
+parameters:
+    security.encoder.passwordhash.class: ChristianRiesen\PasswordHashBundle\Security\PasswordHashEncoder
+
+services:
+    security.encoder.passwordhash:
+        class: %security.encoder.passwordhash.class%
+        arguments: [ %cr_passwordhash.cost%, %cr_passwordhash.saltlength%]
