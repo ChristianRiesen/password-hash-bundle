@@ -2,4 +2,5 @@
 .project
 .settings
 composer
-vendor
+composer.lock
+vendor/
