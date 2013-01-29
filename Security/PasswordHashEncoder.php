@@ -29,7 +29,7 @@ class PasswordHashEncoder implements PasswordEncoderInterface
         $cost = (int) $cost;
 
         if ($cost < 4 || $cost > 31) {
-            throw new \InvalidArgumentException(sprintf("password_hash(): Invalid bcrypt cost parameter specified: %d", $cost));
+            throw new \InvalidArgumentException(sprintf("PasswordHashEncoder: Invalid bcrypt cost parameter specified: %d", $cost));
         }
 
         $this->cost = sprintf("%02d", $cost);

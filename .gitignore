@@ -3,4 +3,4 @@
 .settings
 composer
 composer.lock
-vendor/
+vendor
