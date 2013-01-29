@@ -1,5 +1,5 @@
 {
-    "name": "ChristianRiesen/password-hash-bundle",
+    "name": "christian-riesen/password-hash-bundle",
     "type": "symfony-bundle",
     "description": "Custom password encoder for symfony2, using the new password hash api from php 5.5 (with fallback for 5.3 + 5.4)",
     "keywords": ["password hash","password","bcrypt","symfony2","php5.5"],
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-0": {
-            "ChristianRiesen\PasswordHashBundle": ""
+            "ChristianRiesen\\PasswordHashBundle": ""
         }
     }
 }
