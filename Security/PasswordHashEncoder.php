@@ -44,6 +44,7 @@ class PasswordHashEncoder implements PasswordEncoderInterface
         // To clarify: With this method the salt will be stored inside the
         // result of the function password_hash, so no extra saving of salt is
         // needed!
+        // Also of note, if not present, the library will throw a warning.
         $salt = $this->generateSalt();
         $options = array('cost' => $this->cost, 'salt' => $salt);
 
@@ -55,8 +56,6 @@ class PasswordHashEncoder implements PasswordEncoderInterface
      */
     public function isPasswordValid($encoded, $raw, $salt = null)
     {
-        echo 'bla'; exit();
-        //var_dump($raw, $encoded); exit();
         return password_verify($raw, $encoded);
     }
 

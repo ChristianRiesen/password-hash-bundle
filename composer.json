@@ -15,7 +15,8 @@
     ],
     "require": {
         "php": ">=5.3.7",
-        "ircmaxell/password-compat": "1.0.0"
+        "ircmaxell/password-compat": "1.0.0",
+        "symfony/security": "2.1.*"
     },
     "target-dir": "ChristianRiesen/PasswordHashBundle",
     "autoload": {
