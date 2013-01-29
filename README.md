@@ -14,7 +14,7 @@ Use [composer](http://getcomposer.org/) and require the library in your `compose
 
 	{
     	"require": {
-        	"ChristianRiesen/password-hash-bundle": "1.*",
+        	"christian-riesen/password-hash-bundle": "1.*",
     	}
 	}
 
@@ -64,4 +64,6 @@ Note: The cost has to be an integer between 4 and 31.
 Storage
 -------
 
-However you store the passwords (no need for salt storage, it's all in one) you will need always 60 bytes for it. The hash will never be shorter but always exactly this length. Make certain you can store it properly, as it has may contain characters that might cause troubles with hand made queries.
+However you store the password hash you will need always 60 bytes for it. The hash will never be shorter but always exactly this length. Make certain you can store it properly, as it has may contain characters that might cause troubles with hand made queries.
+
+The salt is included in the password hash, so no need for an extra field there.
