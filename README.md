@@ -67,3 +67,8 @@ Storage
 However you store the password hash you will need always 60 bytes for it. The hash will never be shorter but always exactly this length. Make certain you can store it properly, as it has may contain characters that might cause troubles with hand made queries.
 
 The salt is included in the password hash, so no need for an extra field there.
+
+Testing
+-------
+
+To run the tests you have to install the dev requirements via `composer install --dev` in order for them to run through. The symfony security component is needed to make it run cleanly (for interfaces and one abstract class).
